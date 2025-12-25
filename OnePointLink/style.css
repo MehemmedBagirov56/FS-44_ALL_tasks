@@ -3,7 +3,7 @@
     padding: 10px;
     box-sizing: border-box;
     font-family: "BBH Hegarty", sans-serif;
-    
+
 }
 
 
@@ -12,12 +12,33 @@
 
 ul {
     border-radius: 20px;
-    text-align: center;
-    background-color: rgb(221, 179, 179);
+    background-color: rgb(215, 146, 146);
     width: 100%;
     height: 100%;
 }
 
+
+
+
+a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+}
+
+li {
+    text-align: center;
+    line-height: 60px;
+
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: rgb(167, 109, 109) !important;
+
+}
 
 li:nth-child(1) {
     background-color: red;
@@ -56,25 +77,17 @@ li:nth-child(9) {
 }
 
 li:nth-child(10) {
-    background-color: rgb(2, 85, 1);
+    background-color: rgba(0, 49, 122, 0.359);
 }
 
-a {
-    color: white;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    font-size: 30px;
+li:nth-child(11) {
+    background-color: rgb(212, 255, 0);
 }
 
-li {
-    text-align: center;
-    line-height: 60px;
-
+li:nth-child(12) {
+    background-color: rgb(41, 46, 41);
 }
 
-li:hover {
-    cursor: pointer;
-    background-color: #ccc;
-
+li:nth-child(13) {
+    background-color: rgb(76, 255, 32);
 }
