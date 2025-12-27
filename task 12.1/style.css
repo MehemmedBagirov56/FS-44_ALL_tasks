@@ -7,8 +7,8 @@
     border: 1px solid;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 200px);
+    grid-template-columns: 1fr 0.5fr 1fr 2fr 1fr;
+    grid-template-rows: 200px 130px 130px 200px;
 }
 
 .items {
@@ -24,14 +24,13 @@
 
 .items:nth-child(2) {
     background-color: rgb(161, 1, 175);
+    grid-column: span 2;
     grid-row: span 2;
-    grid-column: span 1;
 }
 
 .items:nth-child(3) {
     background-color: rgb(228, 66, 66);
     grid-row: span 4;
-    grid-column: span 3;
 }
 
 .items:nth-child(4) {
@@ -59,12 +58,17 @@
 .items:nth-child(9) {
     background-color: rgb(10, 242, 255);
 }
+
 .items:nth-child(10) {
     background-color: rgb(21, 159, 129);
 }
+
 .items:nth-child(11) {
     background-color: rgb(67, 0, 150);
+    grid-column: span 3;
+
 }
+
 .items:nth-child(12) {
     background-color: rgb(255, 10, 10);
 }
