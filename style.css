@@ -97,3 +97,6 @@ li:nth-child(14) {
 li:nth-child(15) {
     background-color: rgba(47, 1, 16, 0.404);
 }
+li:nth-child(16) {
+    background-color: rgba(173, 92, 119, 0.404);
+}
