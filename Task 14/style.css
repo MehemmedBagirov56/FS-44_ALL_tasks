@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+.services {
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.subtitle {
+    color: #2f6fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+.service-box {
+    border: 1px solid #cfd3ff;
+    padding: 40px 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+}
+.service-box::before {
+    content: "";
+    position: absolute;
+    right: -40px;
+    bottom: -40px;
+    width: 220px;
+    height: 220px;
+    background: url("https://www.svgrepo.com/show/530438/settings.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.05;
+    transition: 0.4s;
+}
+
+
+.service-box:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+    background: #2f6fff;
+    cursor: pointer;
+    
+}
+.service-box:hover h3,
+.service-box:hover p {
+    color: #fff;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    background: #2f6fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.icon i {
+    color: #fff;
+    font-size: 32px;
+}
+
+.service-box h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.service-box p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 35px;
+    background: linear-gradient(to right, #6a8cff, #1f4cff);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
